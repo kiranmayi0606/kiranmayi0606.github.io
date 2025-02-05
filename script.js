@@ -1,21 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Smooth scroll for navigation
-  const navLinks = document.querySelectorAll('nav ul li a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = e.target.getAttribute('href').substring(1);
-      document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
   // Dark mode toggle
   const toggleButton = document.getElementById('dark-mode-toggle');
   toggleButton.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    toggleButton.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
   });
 
-  // Form submission handling
+  // Scroll animations
+  const fadeIns = document.querySelectorAll('.fade-in');
+  const options = {
+    threshold: 0.3,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('appear');
+      observer.unobserve(entry.target);
+    });
+  }, options);
+
+  fadeIns.forEach(fadeIn => {
+    appearOnScroll.observe(fadeIn);
+  });
+
+  // Contact form submission
   const contactForm = document.getElementById('contact-form');
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
