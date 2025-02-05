@@ -4,6 +4,12 @@ body {
   padding: 0;
   background-color: #f4f4f9;
   color: #333;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f4f4f9;
 }
 
 header {
@@ -16,6 +22,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 2.5em;
+  animation: fadeInDown 1s ease;
 }
 
 header nav ul {
@@ -31,6 +38,24 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+button {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800;
 }
 
 section {
@@ -39,22 +64,25 @@ section {
 
 section h2 {
   color: #0073e6;
+  animation: fadeInUp 1s ease;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+form {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-ul li {
-  margin: 10px 0;
+form label {
+  display: block;
+  margin: 10px 0 5px;
 }
 
-.experience-item, .project-item {
-  background-color: #e6e6ff;
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 8px;
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 footer {
@@ -62,7 +90,26 @@ footer {
   padding: 10px;
   background-color: #333;
   color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
