@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,6 +32,7 @@ nav ul li a {
 
 section {
     padding: 20px;
+    margin-bottom: 60px; /* To prevent footer overlap */
 }
 
 footer {
