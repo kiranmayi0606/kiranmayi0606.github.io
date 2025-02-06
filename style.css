@@ -12,6 +12,21 @@ body {
   color: #f4f4f9;
 }
 
+.education-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  transition: transform 0.2s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  background-color: #e6f7ff;
+}
+
+
 header {
   text-align: center;
   padding: 20px;
