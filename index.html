@@ -3,33 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lakshmi Kiranmayi Chelluboyina - Portfolio</title>
+    <title>Kiranmayi Chelluboyina - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body>
-    <header>
-        <h1>Lakshmi Kiranmayi Chelluboyina</h1>
-        <nav>
+<body class="dark-mode">
+    <div class="container-wrapper">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <div class="sidebar-profile">
+                <img src="images/profile.jpg" alt="Kiranmayi Chelluboyina's Profile Picture" class="sidebar-pic">
+                <h1>Kiranmayi Chelluboyina</h1>
+            </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Experience</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#education" data-section="education">Education</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#experience" data-section="experience">Experience</a></li>
+                <li><a href="#projects" data-section="projects">Projects</a></li>
+                <li><a href="#leadership" data-section="leadership">Leadership</a></li>
+                <li><a href="#certifications" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle">Toggle Dark Mode</button>
-    </header>
 
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>Enthusiastic software engineer skilled in SQL, web development, and Java, with a passion for fintech. Proven track record of optimizing database performance and delivering engaging user experiences in collaborative environments. Eager to contribute my technical skills to impactful projects that drive innovation.</p>
-    </section>
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <div class="container">
+                    <h2>About</h2>
+                    <div class="summary-content">
+                        <p>Enthusiastic software engineer skilled in SQL, web development, and Java, with a passion for fintech. Proven track record of optimizing database performance and delivering engaging user experiences in collaborative environments. Eager to contribute my technical skills to impactful projects that drive innovation.</p>
+                    </div>
+                </div>
+            </section>
 
-   <footer>
-    <p>Contact: (914) 308-4486 | Email: lc5259@nyu.edu | <a href="https://www.linkedin.com/in/kiranmayi7/" target="_blank">LinkedIn</a></p>
-</footer>
+            <!-- Education Section -->
+            <section id="education" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Education</h2>
+                    <div class="education-content">
+                        <div class="card">
+                            <h3>New York University, New York, USA</h3>
+                            <p><em>Master's in Computer Engineering (May 2025)</em></p>
+                            <p>Sep 2023 - Present</p>
+                            <ul class="no-bullets">
+                                <li>Advanced DBMS, Machine Learning, Computer Architecture, Internet Architecture & Protocols, Spring & GUI, Java Swing, Foundations of Finance, ML for Cybersecurity, Design & Analysis of Algorithms</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Andhra University, Visakhapatnam, India</h3>
+                            <p><em>Bachelor's in Electrical and Electronics Engineering</em></p>
+                            <p>Aug 2017 - Jun 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <div class="skills-content">
+                        <div class="card">
+                            <h3>Programming Languages</h3>
+                            <ul class="no-bullets">
+                                <li>Java, Python, C, C++, C#, JavaScript, PHP</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Web Development</h3>
+                            <ul class="no-bullets">
+                                <li>HTML, CSS, React.js, Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Database Management</h3>
+                            <ul class="no-bullets">
+                                <li>SQL, SQLite, MySQL, Azure Databricks, PySpark, Apache Spark, Microsoft Azure</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Frameworks & Libraries</h3>
+                            <ul class="no-bullets">
+                                <li>Java Swing, Spring, SLF4J, Reprozip, Adobe Photoshop, MATLAB, Scikit-learn, TensorFlow, Matplotlib, Pandas</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Tools & Software</h3>
+                            <ul class="no-bullets">
+                                <li>MS Excel, Google Suite, Microsoft Office Suite, Tableau, Power BI, Github</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Key Concepts</h3>
+                            <ul class="no-bullets">
+                                <li>Data Structures & Algorithms, Concurrency Control, Transaction Management, DB Recovery</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Professional Experience</h2>
+                    <div class="experience-content">
+                        <div class="card">
+                            <h3>Application Development Analyst, Accenture</h3>
+                            <p><em>Jul 2021 - Dec 2022</em></p>
+                            <ul class="no-bullets">
+                                <li>Executed SQL scripts and ETL workflows for accuracy and compliance, optimizing database queries for a 20% performance boost and streamlining data extraction by 30%, adhering to SQL style guides and ensuring data integrity.</li>
+                                <li>Designed intuitive user interfaces using HTML, CSS, JavaScript, and React.js. Collaborated in Agile teams using Scrum and Kanban methodologies for iterative development and continuous improvement.</li>
+                                <li>Integrated full-stack web applications, connecting responsive front-end components with scalable back-end services using RESTful APIs, while improving user experience through efficient GUI design and performance optimization.</li>
+                                <li>Acquired comprehensive knowledge in Core Java and Python, focusing on OOP, data structures and algorithms, exception handling, and polymorphism.</li>
+                                <li>Maintained permission systems across the database warehouse to ensure compliance and operations.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Application Development Intern, Nandhika Infotech, Visakhapatnam, India</h3>
+                            <p><em>Jan 2021 - Jun 2021</em></p>
+                            <ul class="no-bullets">
+                                <li>Developed web applications and backend services using Node.js and TypeScript, optimizing MySQL databases.</li>
+                                <li>Assisted in project planning and execution by gathering requirements and collaborating with team members.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <div class="projects-content">
+                        <div class="card">
+                            <h3>Jailbreaking Large Language Models</h3>
+                            <p><em>Sep 2024 - Dec 2024</em></p>
+                            <ul class="no-bullets">
+                                <li>Conducted experiments to tune hyperparameters, improving the efficiency of the jailbreaking process on a dataset of 100 prompts, and demonstrated a 30% improvement in bypass success rates.</li>
+                                <li>Analyzed adversarial attack strategies using OpenAI's Moderation Framework and devised methods to measure moderation scores for safety evaluations.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Malware Detection using Classifiers with Hyperparameter Tuning</h3>
+                            <p><em>Sep 2024 - Dec 2024</em></p>
+                            <ul class="no-bullets">
+                                <li>Conducted research on malware detection techniques, including signature-based, heuristic, machine learning, and deep learning approaches, with a focus on data quality, adversarial attacks, and interpretability issues.</li>
+                                <li>Developed a malware detection system based on a Random Forest classifier, achieving 99.56% accuracy, and optimized performance through hyperparameter tuning, cross-validation, and result visualization.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Secure Authentication & Multi-threaded Product Management</h3>
+                            <p><em>Jan 2024 - May 2024</em></p>
+                            <ul class="no-bullets">
+                                <li>Developed a Java-based software to streamline businesses featuring secure authentication with password hashing, dynamic invoice generation with pricing algorithms, and concurrency handling.</li>
+                                <li>Established seamless database connectivity by integrating the SQLite JDBC driver into the Java application, ensuring efficient interaction with the database for user registration and manipulation.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Replicated Concurrency Control & Recovery</h3>
+                            <p><em>Sep 2023 - Dec 2023</em></p>
+                            <ul class="no-bullets">
+                                <li>Engineered a distributed database system with Serializable Snapshot Isolation, Replication, Failure Recovery, ensuring data consistency and fault tolerance across distributed environments.</li>
+                                <li>Packaged the project with Reprozip for comprehensive reproducibility and compatibility across various system architectures.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Phishing Detection in Emails Using Machine Learning</h3>
+                            <p><em>Jan 2022 - Mar 2022</em></p>
+                            <ul class="no-bullets">
+                                <li>Detected fraudulent emails, thereby protecting the confidential information of a person or an organization.</li>
+                                <li>Used machine learning algorithms like Random Forest and Decision Tree to identify phishing attacks.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Power Quality Improvement</h3>
+                            <p><em>Jan 2021 - Jun 2022</em></p>
+                            <ul class="no-bullets">
+                                <li>Mitigated the 2nd harmonics in line currents through shunt active power filters, enhancing performance and accuracy.</li>
+                                <li>Developed a Simulink model using MATLAB software, facilitating comparative analysis with conventional power quality improvement methods.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leadership Section -->
+            <section id="leadership" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Leadership & Achievements</h2>
+                    <div class="leadership-content">
+                        <div class="card">
+                            <h3>David Chang and Cecilia M. Chang Student Leadership Award</h3>
+                            <ul class="no-bullets">
+                                <li>Recognized by the Department of Electrical & Computer Engineering at NYU Tandon School of Engineering and selected to attend the 2024 Grace Hopper Celebration for Women in Computing.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Teaching Assistant, New York University</h3>
+                            <p><em>Sep 2024 - Present</em></p>
+                            <ul class="no-bullets">
+                                <li>Created grading rubrics and assessed weekly assignments and exams, focusing on mathematical proofs and algorithmic simulations for a class of 120 students.</li>
+                                <li>Provided detailed feedback on student submissions to enhance their understanding and performance in the Basic Algorithms course.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Graduate Student Advisory Board, New York University</h3>
+                            <p><em>Sep 2024 - Present</em></p>
+                            <ul class="no-bullets">
+                                <li>Served as a liaison between graduate students and the Wasserman Center Graduate Student Career Services Team, advocating for student needs and interests.</li>
+                                <li>Collaborated with faculty, staff, and fellow students on initiatives to improve the graduate student experience, such as mentorship programs, professional development workshops, and social events.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Engagement Ambassador, Ruffalo Noel Levitz</h3>
+                            <p><em>Sep 2024 - Present</em></p>
+                            <ul class="no-bullets">
+                                <li>Conducted outreach calls to NYU alumni, effectively engaging them in discussions about their experiences and encouraging support for university initiatives.</li>
+                                <li>Achieved individual fundraising goals by promoting university programs and recording detailed donor information, contributing to the overall success of the Phonathon campaign.</li>
+                            </ul>
+                        </div>
+                        <div class="card">
+                            <h3>Awarded a Merit Scholarship of $7000 per year at New York University</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section id="certifications" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Courses & Certifications</h2>
+                    <div class="certifications-content">
+                        <div class="card">
+                            <h3>Oracle Cloud Infrastructure Foundations 2021 Associate</h3>
+                            <p><em>Oracle</em></p>
+                        </div>
+                        <div class="card">
+                            <h3>Azure Databricks & Spark for Data Engineers</h3>
+                            <p><em>Udemy</em></p>
+                        </div>
+                        <div class="card">
+                            <h3>Object Oriented Programming Using C++</h3>
+                            <p><em>National Institute of Information Technology (NIIT)</em></p>
+                        </div>
+                        <div class="card">
+                            <h3>Programming in C</h3>
+                            <p><em>National Institute of Information Technology (NIIT)</em></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="content-section" style="display: none;">
+                <div class="container">
+                    <h2>Contact</h2>
+                    <div class="contact-content">
+                        <p>Feel free to reach out to me for collaborations or opportunities!</p>
+                        <div class="contact-icons">
+                            <a href="tel:9143084486" title="Call Me"><i class="fas fa-phone"></i> (914) 308-4486</a>
+                            <a href="mailto:lc5259@nyu.edu" title="Email Me"><i class="fas fa-envelope"></i> lc5259@nyu.edu</a>
+                            <a href="https://www.linkedin.com/in/kiranmayichelluboyina/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main> 
+    </div>
+
+    <!-- Footer -->
+    <footer class="dark-mode">
+        <div class="footer-icons">
+            <a href="tel:9143084486" title="Call Me"><i class="fas fa-phone"></i></a>
+            <a href="mailto:lc5259@nyu.edu" title="Email Me"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/kiranmayichelluboyina/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
 
     <script src="script.js"></script>
 </body>
