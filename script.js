@@ -20,13 +20,29 @@ function showSection(sectionId) {
 }
 
 // Add click event listeners to sidebar links
-document.querySelectorAll('.sidebar a').forEach(link => {
+/*document.querySelectorAll('.sidebar a').forEach(link => {
   link.addEventListener('click', function (e) {
       e.preventDefault();
       const sectionId = this.getAttribute('data-section');
       showSection(sectionId);
   });
+});*/
+
+document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = this.getAttribute("data-section");
+
+        // Hide all sections
+        document.querySelectorAll(".content-section").forEach(sec => {
+            sec.style.display = "none";
+        });
+
+        // Show target section
+        document.getElementById(target).style.display = "block";
+    });
 });
+
 
 // Show the "About" section by default on page load
 window.addEventListener('load', () => {
